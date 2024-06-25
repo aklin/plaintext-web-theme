@@ -1,0 +1,86 @@
+body {
+	background-color: #1a1c20;
+	color: #e5e3df;
+	font-family: "Roboto Mono", monospace;
+	font-size: 1em;
+	line-height: 1.5rem;
+}
+
+main {
+	max-width: 45em;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+a {
+	font-family: "Roboto Mono", monospace;
+	font-size: 1em;
+	color: white;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	background-color: black;
+	color: white;
+}
+
+a:active {
+	color: orange;
+}
+
+nav a::before {
+	content: "/ ";
+	filter: brightness(85%);
+}
+
+nav a:hover{
+	text-decoration: underline;
+}
+
+nav a:hover::before {
+	text-decoration: none;
+	filter: brightness(100%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+}
+
+h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
+	filter: brightness(85%);
+}
+
+p, ul, pre {
+	padding-left: 4em;
+}
+
+ul ul {
+	padding-left: 1em;
+}
+
+ul {
+	list-style: none;
+}
+
+li::before {
+	content: "— ";
+}
+
+
+hr {
+	border: 0 solid black;
+	filter: brightness(85%);
+}
+
+hr::after {
+	content: "--------------------------------------------------------------------------------"
+}
+
+pre {
+	font-family: Consolas, monospace;
+	margin: 0;
+}
